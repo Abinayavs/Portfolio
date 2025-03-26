@@ -1,0 +1,146 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto; /* Center horizontally */
+  width: 400px;
+  height: 450px;
+  background: #000;
+  position: relative; /* Allows absolute positioning for inner elements */
+}
+
+
+@media (max-width: 768px) {
+  .about{
+    width: 300px;
+    height: 350px;
+  }
+}
+.about .image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative; /* Ensures children are positioned within this element */
+}
+
+.about .image img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.about:hover .image img {
+  opacity: 0.5;
+  transform: translateX(30%);
+}
+
+.about .about-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  background: lightcyan;
+  transition: 0.5s;
+  transform-origin: left;
+  transform: perspective(2000px) rotateY(-90deg);
+}
+
+.about:hover .about-details {
+  transform: perspective(2000px) rotateY(0deg);
+}
+
+.about .about-details .center {
+  padding: 10px;
+  background: darkslategrey;
+  text-align:justify;
+  position: relative; 
+  height: 95%;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+.about .about-details .center h1 {
+  color:goldenrod;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about .about-details .center h1 span {
+  font-size: 15px;
+  color: #262626;
+}
+
+.about .about-details p {
+ 
+  font-size: 13px;
+  color: silver;
+  font-weight:bolder;
+}
+
+#experience-section .card {
+  background: rgb(244, 243, 243); /* Transparent white background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(155, 154, 154, 0.873); /* Subtle shadow for a floating effect */
+  max-width: 600px;
+  width: 100%;
+  height: fit-content;
+  text-align: left;
+}
+
+#experience-section .wrap-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#experience-section .wrap-icon img {
+  margin-right: 1rem; /* Add spacing between the icon and text */
+}
+
+#experience-section .experience-head {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333333; /* Dark gray */
+  margin-bottom: 0.5rem;
+}
+
+#experience-section .experience-sub {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #555555; /* Medium dark gray */
+  line-height: 1.5;
+}
+
+#experience-section .experience-sub.highlight {
+  color: #444444; /* Slightly darker gray for emphasis */
+  font-weight: bold;
+}
+
+
+#experience-section .card {
+  transition: transform 0.5s ease, box-shadow 0.5s ease; /* Smooth and slightly longer animation */
+}
+
+#experience-section .card:hover {
+  transform: scale(1.05); /* Zoom-in effect */
+  box-shadow: 0 8px 16px rgba(219, 218, 218, 0.812); /* Enhance hover effect */
+}
+
+@media screen and (max-width: 640px) {
+  .footer {
+      padding: 4% 1%;
+  }
+}
+
+.footer {
+  background-color: #303237;
+  color: #fff;
+  font-family: Poppins, sans-serif;
+  margin-top: 5%;
+  padding: 1% 0;
+  text-align: center;
+}
+
