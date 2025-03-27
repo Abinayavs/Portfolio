@@ -2303,7 +2303,7 @@ span.error {
   color: black;
   padding: 5px;
   border-radius: 20px;
-  height: max-content;
+  height: 380px;
   width:100%;
   display: flex;
   flex-direction: column;
@@ -2312,23 +2312,24 @@ span.error {
 }
 
 .project-title {
-  margin: 0;
+  margin-left: 10px;
   font-size: 20px;
   font-weight: bold;
   color: #000;
 }
 
 .project-subtitle {
-  margin: 0;
+  margin-left: 10px;
   font-size: 15px;
   color: #999;
   line-height: 1.4;
 }
 
 .project-description {
-  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
   line-height: 1.6;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .content-box:hover {
@@ -2422,7 +2423,7 @@ span.error {
 
 
 
-/* Media Queries for further fine-tuning */
+/* Media Queries for further fine-tuning 
 @media (max-width: 768px) {
   
   .card-front__text-view {
@@ -2445,7 +2446,7 @@ span.error {
     font-size: 15px;
     font-weight: 800;
   }
-}
+}*/
 
 .inside-page__heading--city,
 .card-front__text-view--city {
@@ -2502,6 +2503,19 @@ span.error {
   justify-content: center;
   width: 100%;
   /* Add margin to create space between cards */
+}
+
+@media (max-width:375px){
+
+  .card-section {
+    align-items: center;
+    display: flex;
+    height: 350px;;
+    justify-content: center;
+    width: 100%;
+    margin-right: 20px;
+    /* Add margin to create space between cards */
+  }
 }
 
 /* A container to hold the flip card and the inside page */
@@ -2661,10 +2675,14 @@ span.error {
   max-height: 100%;
 }
 
+/* responsiveness*/
+
+/* ends */
+
 /* Card ============================================*/
 
 /* Area to hold an individual card */
-.card-section {
+/*.card-section {
   align-items: center;
   display: flex;
   height: 100%;
@@ -2673,7 +2691,7 @@ span.error {
 }
 
 /* A container to hold the flip card and the inside page */
-.card {
+/*.card {
   background-color: rgba(180, 177, 177, 0.89);
   box-shadow: -.1rem 1.7rem 6.6rem -3.2rem rgb(194, 190, 190);
   height: 15rem;
@@ -2783,9 +2801,9 @@ span.error {
   display: block;
   max-width: 100%;
   max-height: 100%;
-}
+}*/
 
-/* Responsive Styles */
+/* Responsive Styles 
 @media (max-width: 768px) {
   .card {
     height: 12rem;
@@ -2802,7 +2820,7 @@ span.error {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 375px) {
   .card {
     height: 10rem;
     width: 10rem;
@@ -2816,7 +2834,7 @@ span.error {
   .card-front__tp {
     height: 8rem;
   }
-}
+}*/
 
 
 .cd {
