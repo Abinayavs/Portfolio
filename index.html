@@ -23,7 +23,29 @@
   <!-- Theme Style -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/test.css">
+  <link rel="stylesheet" href="css/flip.css">
 
+  <style>
+    /* Hide both segments by default */
+    .desktop-view,
+    .mobile-view {
+      display: none;
+    }
+
+    /* ✅ Show Desktop, Tablet, iPad View (Width > 768px) */
+    @media screen and (min-width: 769px) {
+      .desktop-view {
+        display: block;
+      }
+    }
+
+    /* ✅ Show Mobile View (Width ≤ 768px) */
+    @media screen and (max-width: 768px) {
+      .mobile-view {
+        display: block;
+      }
+    }
+  </style>
 </head>
 
 <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
@@ -95,7 +117,8 @@
 
             <div class="col-md-7 mx-auto text-center">
               <h1 class="heading gsap-reveal-hero">My Coding Passion</h1>
-              <h2 class="subheading gsap-reveal-hero">I'm Abinayashri V.S., an M.Sc. Software Systems student with a passion 
+              <h2 class="subheading gsap-reveal-hero">I'm Abinayashri V.S., an M.Sc. Software Systems student with a
+                passion
                 for innovative problem-solving and continuous learning to stay ahead in the tech world.
               </h2>
             </div>
@@ -207,7 +230,7 @@
               <img src="images/divider.png" alt="divider" width="76">
             </span>
           </div>
-      
+
           <!-- Card -->
           <div class="d-flex justify-content-center">
             <div class="card gsap-reveal">
@@ -217,7 +240,7 @@
               <h3 class="experience-head">SOFTWARE ENGINEER INTERN (July 2024 - Nov 2024)</h3>
               <p class="experience-sub">BusinessOnBot , Bengalore</p>
               <p class="experience-sub highlight">
-                I have 5 months of experience as a Front-End Developer, working on a project 
+                I have 5 months of experience as a Front-End Developer, working on a project
                 called "Rewards and Retention Strategies" using Angular and Tailwind CSS to create
                 responsive and user-friendly designs.
               </p>
@@ -225,7 +248,7 @@
           </div>
         </div>
       </div>
-      
+
 
       <!-- Project Section-->
       <div class="unslate_co--section" id="project-section">
@@ -297,8 +320,9 @@
                       </h3>
                       <p class="project-subtitle">Java Swing/Oracle Database</p>
                       <p class="project-description">
-                        Implemented a roll number and password validation system with 99% accuracy, ensuring data security. 
-                        Developed a dynamic meal-time menu adaptation,boosting order efficiency by 40%. 
+                        Implemented a roll number and password validation system with 99% accuracy, ensuring data
+                        security.
+                        Developed a dynamic meal-time menu adaptation,boosting order efficiency by 40%.
                         Enhanced on-screen bill viewing for logged-in students with existing orders.
                       </p>
                     </div>
@@ -339,171 +363,277 @@
           <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
         </div>
 
-        <div class="owl-carousel logo-slider">
+        <div class="desktop-view">
+          <div class="owl-carousel logo-slider">
+            <section class="card-section">
+              <div class="card">
+                <div class="flip-card">
+                  <div class="flip-card__container">
+                    <div class="card-front">
+                      <div class="card-front__tp card-front__tp--city">
 
+                        <h2 class="card-front__heading">
+                          Paper Publication
+                        </h2>
+                        <p class="card-front__text-price">
+                          Sep - 2023
+                        </p>
+                      </div>
 
-          <section class="card-section">
-            <div class="card">
-              <div class="flip-card">
-                <div class="flip-card__container">
-                  <div class="card-front">
-                    <div class="card-front__tp card-front__tp--city">
-
-                      <h2 class="card-front__heading">
-                        Paper Publication
-                      </h2>
-                      <p class="card-front__text-price">
-                        Sep - 2023
-                      </p>
+                      <div class="card-front__bt">
+                        <p class="card-front__text-view card-front__text-view--city">
+                          View me
+                        </p>
+                      </div>
                     </div>
-
-                    <div class="card-front__bt">
-                      <p class="card-front__text-view card-front__text-view--city">
-                        View me
-                      </p>
+                    <div class="card-back">
+                      <img class="gif__container" src="images/gif3.gif" alt="paper-publication">
                     </div>
                   </div>
-                  <div class="card-back">
-                    <img class="gif__container" src="images/gif3.gif" alt="paper-publication">
+                </div>
+
+                <div class="inside-page">
+                  <div class="inside-page__container">
+                    <h3 class="inside-page__heading inside-page__heading--city">
+                      " Student placement prediction "
+                    </h3>
+                    <p class="inside-page__text">
+                      Co-authored and published this paper using ML algorithms on I-PACT.
+                    </p>
                   </div>
                 </div>
               </div>
+            </section>
 
-              <div class="inside-page">
-                <div class="inside-page__container">
-                  <h3 class="inside-page__heading inside-page__heading--city">
-                    " Student placement prediction "
-                  </h3>
-                  <p class="inside-page__text">
-                    Co-authored and published this paper using ML algorithms on I-PACT.
-                  </p>
+
+
+            <section class="card-section">
+              <div class="card">
+                <div class="flip-card">
+                  <div class="flip-card__container">
+                    <div class="card-front">
+                      <div class="card-front__tp card-front__tp--ski">
+                        <h2 class="card-front__heading">
+                          Courses
+                        </h2>
+                        <p class="card-front__text-price">
+                          Mar - 2023
+                        </p>
+                      </div>
+
+                      <div class="card-front__bt">
+                        <p class="card-front__text-view card-front__text-view--ski">
+                          View me
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="card-back">
+                      <img class="gif__container" src="images/book.gif" alt="paper-publication">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="inside-page">
+                  <div class="inside-page__container">
+                    <h3 class="inside-page__heading inside-page__heading--ski">
+                      " Intro to Deep Learning & DataScience "
+                    </h3>
+                    <p class="inside-page__text">
+                      Have Completed the above courses at Great learning and Coursera Platforms.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="card-section">
+              <div class="card">
+                <div class="flip-card">
+                  <div class="flip-card__container">
+                    <div class="card-front">
+                      <div class="card-front__tp card-front__tp--beach">
+
+                        <h2 class="card-front__heading">
+                          College Events
+                        </h2>
+                        <p class="card-front__text-price">
+                          Apr - 2023
+                        </p>
+                      </div>
+
+                      <div class="card-front__bt">
+                        <p class="card-front__text-view card-front__text-view--beach">
+                          View me
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card-back">
+                      <img class="gif__container" src="images/code.gif" alt="paper-publication">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="inside-page">
+                  <div class="inside-page__container">
+                    <h3 class="inside-page__heading inside-page__heading--beach">
+                      " Code 2 Duo, Technical Quiz, & Reverse Coding Contest "
+                    </h3>
+                    <p class="inside-page__text">
+                      Engaged in above Intra-college events.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="card-section">
+              <div class="card">
+                <div class="flip-card">
+                  <div class="flip-card__container">
+                    <div class="card-front">
+                      <div class="card-front__tp card-front__tp--camping">
+                        <h2 class="card-front__heading">
+                          Hackathon
+                        </h2>
+                        <p class="card-front__text-price">
+                          Apr - 2024
+                        </p>
+                      </div>
+
+                      <div class="card-front__bt">
+                        <p class="card-front__text-view card-front__text-view--camping">
+                          View me
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card-back">
+                      <img class="gif__container" src="images/hack.gif" alt="paper-publication">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="inside-page">
+                  <div class="inside-page__container">
+                    <h3 class="inside-page__heading inside-page__heading--camping">
+                      " CodeEase "
+                    </h3>
+                    <p class="inside-page__text">
+                      Participated in the Melinia Hackathon at our college, advancing to the final round with the above
+                      project
+                      targeting mental health.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="mobile-view">
+          <div class="cert-grid">
+
+            <div class="container-x">
+              <div class="card-x">
+                <div class="front-x">
+                  <div class="titles">
+                    <h2 class="card-front__heading-x">
+                      Paper Publication
+                    </h2>
+                    <p class="card-front__text-price-x">
+                      Sep - 2023
+                    </p>
+                  </div>
+                </div>
+                <div class="back-x">
+                  <div class="content-inside-x">
+                    <h3 class="inside-page__heading-x inside-page__heading--city-x">
+                      " Student placement prediction "
+                    </h3>
+                    <p class="inside-page__text-x">
+                      Co-authored and published this paper using ML algorithms on I-PACT.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </section>
 
-
-
-          <section class="card-section">
-            <div class="card">
-              <div class="flip-card">
-                <div class="flip-card__container">
-                  <div class="card-front">
-                    <div class="card-front__tp card-front__tp--ski">
-                      <h2 class="card-front__heading">
-                        Courses
-                      </h2>
-                      <p class="card-front__text-price">
-                        Mar - 2023
-                      </p>
-                    </div>
-
-                    <div class="card-front__bt">
-                      <p class="card-front__text-view card-front__text-view--ski">
-                        View me
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="card-back">
-                    <img class="gif__container" src="images/book.gif" alt="paper-publication">
+            <div class="container-x">
+              <div class="card-x">
+                <div class="front-x">
+                  <div class="titles">
+                    <h2 class="card-front__heading-x">
+                      Courses
+                    </h2>
+                    <p class="card-front__text-price-x">
+                      Mar - 2023
+                    </p>
                   </div>
                 </div>
-              </div>
-
-              <div class="inside-page">
-                <div class="inside-page__container">
-                  <h3 class="inside-page__heading inside-page__heading--ski">
-                    " Intro to Deep Learning & DataScience "
-                  </h3>
-                  <p class="inside-page__text">
-                    Have Completed the above courses at Great learning and Coursera Platforms.
-                  </p>
+                <div class="back-x">
+                  <div class="content-inside-x">
+                    <h3 class="inside-page__heading-x inside-page__heading--ski-x">
+                      " Intro to Deep Learning & DataScience "
+                    </h3>
+                    <p class="inside-page__text-x">
+                      Have Completed the above courses at Great learning and Coursera Platforms.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </section>
 
-          <section class="card-section">
-            <div class="card">
-              <div class="flip-card">
-                <div class="flip-card__container">
-                  <div class="card-front">
-                    <div class="card-front__tp card-front__tp--beach">
-
-                      <h2 class="card-front__heading">
-                        College Events
-                      </h2>
-                      <p class="card-front__text-price">
-                        Apr - 2023
-                      </p>
-                    </div>
-
-                    <div class="card-front__bt">
-                      <p class="card-front__text-view card-front__text-view--beach">
-                        View me
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card-back">
-                    <img class="gif__container" src="images/code.gif" alt="paper-publication">
+            <div class="container-x">
+              <div class="card-x">
+                <div class="front-x">
+                  <div class="titles">
+                    <h2 class="card-front__heading-x">
+                      College Events
+                    </h2>
+                    <p class="card-front__text-price-x">
+                      Apr - 2023
+                    </p>
                   </div>
                 </div>
-              </div>
-
-              <div class="inside-page">
-                <div class="inside-page__container">
-                  <h3 class="inside-page__heading inside-page__heading--beach">
-                    " Code 2 Duo, Technical Quiz, & Reverse Coding Contest "
-                  </h3>
-                  <p class="inside-page__text">
-                    Engaged in above Intra-college events.
-                  </p>
+                <div class="back-x">
+                  <div class="content-inside-x">
+                    <h3 class="inside-page__heading-x inside-page__heading--beach-x">
+                      " Code 2 Duo, Technical Quiz, & Reverse Coding Contest "
+                    </h3>
+                    <p class="inside-page__text-x">
+                      Engaged in above Intra-college events.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </section>
 
-          <section class="card-section">
-            <div class="card">
-              <div class="flip-card">
-                <div class="flip-card__container">
-                  <div class="card-front">
-                    <div class="card-front__tp card-front__tp--camping">
-                      <h2 class="card-front__heading">
-                        Hackathon
-                      </h2>
-                      <p class="card-front__text-price">
-                        Apr - 2024
-                      </p>
-                    </div>
-
-                    <div class="card-front__bt">
-                      <p class="card-front__text-view card-front__text-view--camping">
-                        View me
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card-back">
-                    <img class="gif__container" src="images/hack.gif" alt="paper-publication">
+            <div class="container-x">
+              <div class="card-x">
+                <div class="front-x">
+                  <div class="titles">
+                    <h2 class="card-front__heading-x">
+                      Hackathon
+                    </h2>
+                    <p class="card-front__text-price-x">
+                      Apr - 2024
+                    </p>
                   </div>
                 </div>
-              </div>
-
-              <div class="inside-page">
-                <div class="inside-page__container">
-                  <h3 class="inside-page__heading inside-page__heading--camping">
-                    " CodeEase "
-                  </h3>
-                  <p class="inside-page__text">
-                    Participated in the Melinia Hackathon at our college, advancing to the final round with the above
-                    project
-                    targeting mental health.
-                  </p>
+                <div class="back-x">
+                  <div class="content-inside-x">
+                    <h3 class="inside-page__heading-x inside-page__heading--camping-x">
+                      " CodeEase "
+                    </h3>
+                    <p class="inside-page__text-x">
+                      Participated in the Melinia Hackathon at our college, advancing to the final round with the
+                      above
+                      project targeting mental health.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </section>
+          </div>
         </div>
       </div>
 
@@ -602,9 +732,9 @@
                 <input type="hidden" name="access_key" value="af14d81a-56cd-4e4e-bbda-9d473854aee2">
                 <div id="form-message-success" style="display: none;"></div>
                 <div id="form-message-warning" style="display: none;"></div>
-        
 
-                
+
+
                 <!-- Form Fields -->
                 <div class="form-group row mb-0">
                   <div class="col-lg-6 form-group gsap-reveal">
@@ -620,7 +750,7 @@
                     <textarea name="message" id="message" cols="30" rows="7" class="form-control"></textarea>
                   </div>
                 </div>
-                
+
                 <!-- Submit Button -->
                 <div class="form-group row gsap-reveal">
                   <div class="col-md-12 d-flex align-items-center">
@@ -628,7 +758,7 @@
                   </div>
                 </div>
 
-              
+
               </form>
 
             </div>
@@ -651,31 +781,34 @@
             </div>
           </div>
 
-          </div>
         </div>
       </div>
-    </div> <!-- END .unslate_co-site-inner -->
+    </div>
+  </div> <!-- END .unslate_co-site-inner -->
 
-    <footer class="unslate_co--footer unslate_co--section">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-7">
-            
-            <ul class="footer-site-social">
-              <li><a href="https://www.linkedin.com/in/abinayashri-vs/"> <i class="fa-brands fa-linkedin fa-2x" style="color: antiquewhite;"></i></a></li>
-              <li><a href="https://github.com/Abinayavs"><i class="fa-brands fa-github fa-2x" style="color: antiquewhite;"></i></a></li>
-              <li><a href="https://www.instagram.com/abinaya__v__s/"><i class="fa-brands fa-instagram fa-2x" style="color: antiquewhite;"></i></a></li>
-            </ul>
+  <footer class="unslate_co--footer unslate_co--section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-7">
 
-            <p style="color:antiquewhite;font-weight:bolder">
-              Created and Designed by <b>Abinayashri VS</b>
-            </p>
+          <ul class="footer-site-social">
+            <li><a href="https://www.linkedin.com/in/abinayashri-vs/"> <i class="fa-brands fa-linkedin fa-2x"
+                  style="color: antiquewhite;"></i></a></li>
+            <li><a href="https://github.com/Abinayavs"><i class="fa-brands fa-github fa-2x"
+                  style="color: antiquewhite;"></i></a></li>
+            <li><a href="https://www.instagram.com/abinaya__v__s/"><i class="fa-brands fa-instagram fa-2x"
+                  style="color: antiquewhite;"></i></a></li>
+          </ul>
 
-          </div>
+          <p style="color:antiquewhite;font-weight:bolder">
+            Created and Designed by <b>Abinayashri VS</b>
+          </p>
+
         </div>
       </div>
-    </footer>
-    
+    </div>
+  </footer>
+
 
   </div>
 
@@ -688,55 +821,55 @@
 
   <script>
     // Handle form submission using vanilla JavaScript
-	  document
-		.getElementById("contact")
-		.addEventListener("submit", async function (event) {
-		  event.preventDefault(); // Prevent default form submission
-      
-		  // Validate the form using jQuery Validate plugin
-		  if (!$("#contact").valid()) {
-			return; // Stop if the form is invalid
-		  }
-  
-		  const form = event.target;
-		  const formData = new FormData(form);
-  
-		  // Show a loading spinner or message if desired
-		  const successMessage = document.getElementById("form-message-success");
-		  const errorMessage = document.getElementById("form-message-warning");
-		  successMessage.style.display = "none";
-		  errorMessage.style.display = "none";
-  
-		  try {
-			const response = await fetch(form.action, {
-			  method: form.method,
-			  body: formData,
-			});
-  
-			if (response.ok) {
-			  const result = await response.json();
-			  console.log(result);
-  
-			  if (result.success) {
-				successMessage.textContent = "Your message has been sent successfully, thank you !!";
-				successMessage.style.display = "block";
-				form.reset(); // Clear the form
-			  } else {
-				errorMessage.textContent =
-				  result.message || "Something went wrong, Please try again.";
-				errorMessage.style.display = "block";
-			  }
-			} else {
-			  errorMessage.textContent =
-				"Failed to submit the form. Please check your details.";
-			  errorMessage.style.display = "block";
-			}
-		  } catch (error) {
-			errorMessage.textContent =
-			  "An error occurred. Please try again later.";
-			errorMessage.style.display = "block";
-		  }
-		});
+    document
+      .getElementById("contact")
+      .addEventListener("submit", async function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Validate the form using jQuery Validate plugin
+        if (!$("#contact").valid()) {
+          return; // Stop if the form is invalid
+        }
+
+        const form = event.target;
+        const formData = new FormData(form);
+
+        // Show a loading spinner or message if desired
+        const successMessage = document.getElementById("form-message-success");
+        const errorMessage = document.getElementById("form-message-warning");
+        successMessage.style.display = "none";
+        errorMessage.style.display = "none";
+
+        try {
+          const response = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+          });
+
+          if (response.ok) {
+            const result = await response.json();
+            console.log(result);
+
+            if (result.success) {
+              successMessage.textContent = "Your message has been sent successfully, thank you !!";
+              successMessage.style.display = "block";
+              form.reset(); // Clear the form
+            } else {
+              errorMessage.textContent =
+                result.message || "Something went wrong, Please try again.";
+              errorMessage.style.display = "block";
+            }
+          } else {
+            errorMessage.textContent =
+              "Failed to submit the form. Please check your details.";
+            errorMessage.style.display = "block";
+          }
+        } catch (error) {
+          errorMessage.textContent =
+            "An error occurred. Please try again later.";
+          errorMessage.style.display = "block";
+        }
+      });
   </script>
 
   <script src="js/scripts-dist.js"></script>
