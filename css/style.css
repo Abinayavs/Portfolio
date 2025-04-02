@@ -9,6 +9,16 @@ body {
   position: relative;
 }
 
+html, body {
+  overflow-x: hidden;  
+  overflow-y: auto;  
+}
+
+.container {
+  overflow: visible !important;  
+}
+
+
 body:before {
   content: "";
   position: absolute;
