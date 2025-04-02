@@ -18,6 +18,10 @@
   <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+
 
 
   <!-- Theme Style -->
@@ -272,7 +276,7 @@
 
             <div id="posts">
               <div class="item web branding col-sm col-md col-lg-6 isotope-mb-2">
-                <div class="portfolio-item isotope-item  gsap-reveal-img">
+                <div class="portfolio-item isotope-item  gsap-reveal-img" data-aos="slide-left" data-aos-delay="0">
                   <div class="content-box-arrange">
                     <div class="content-box">
                       <h3>
@@ -291,7 +295,7 @@
                 </div>
               </div>
               <div class="item web branding col-sm col-md col-lg-6 isotope-mb-2">
-                <div class="portfolio-item isotope-item gsap-reveal-img">
+                <div class="portfolio-item isotope-item gsap-reveal-img"  data-aos="slide-right" data-aos-delay="0">
                   <div class="content-box-arrange ">
                     <div class="content-box">
                       <h3>
@@ -309,7 +313,7 @@
                 </div>
               </div>
               <div class="item web branding col-sm col-md col-lg-6 isotope-mb-2">
-                <div class="portfolio-item isotope-item gsap-reveal-img">
+                <div class="portfolio-item isotope-item gsap-reveal-img"  data-aos="slide-left" data-aos-delay="0">
                   <div class="content-box-arrange ">
                     <div class="content-box">
                       <h3>
@@ -329,9 +333,9 @@
                   </div>
                 </div>
               </div>
-              <div class="item web branding col-lg-6 isotope-mb-2">
+              <div class="item web branding col-sm col-md col-lg-6 isotope-mb-2">
                 <div class="portfolio-item isotope-item gsap-reveal-img">
-                  <div class="content-box-arrange md:max-md:flex sm:max-sm:flex">
+                  <div class="content-box-arrange md:max-md:flex sm:max-sm:flex" data-aos="slide-right" data-aos-delay="0" >
                     <div class="content-box ">
                       <h3>
                         <a href="https://github.com/Abinayavs/blissfeed.git" target="_blank"
@@ -532,7 +536,7 @@
         <div class="mobile-view">
           <div class="cert-grid">
 
-            <div class="container-x">
+            <div class="container-x" data-aos="fade-left">
               <div class="card-x">
                 <div class="front-x">
                   <div class="titles">
@@ -557,7 +561,7 @@
               </div>
             </div>
 
-            <div class="container-x">
+            <div class="container-x" data-aos="fade-right" data-aos-delay="300">
               <div class="card-x">
                 <div class="front-x">
                   <div class="titles">
@@ -582,7 +586,7 @@
               </div>
             </div>
 
-            <div class="container-x">
+            <div class="container-x" data-aos="fade-left" data-aos-delay="600">
               <div class="card-x">
                 <div class="front-x">
                   <div class="titles">
@@ -607,7 +611,7 @@
               </div>
             </div>
 
-            <div class="container-x">
+            <div class="container-x" data-aos="fade-right" data-aos-delay="900">
               <div class="card-x">
                 <div class="front-x">
                   <div class="titles">
@@ -639,16 +643,16 @@
 
 
 
-      <div class="unslate_co--section section-counter" id="skills-section">
+      <div class="unslate_co--section" id="skills-section">
         <div class="container">
           <div class="section-heading-wrap text-center mb-5">
             <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">My Skills</span></h2>
-            <span class="gsap-reveal;"><img src="images/divider.png" alt="divider" width="76"></span>
+            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
           </div>
 
 
           <div class="row pt-5">
-            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-down" data-aos-delay="0">
               <div class="cd">
                 <div class="cd-front">
                   <span>Languages</span>
@@ -666,7 +670,7 @@
               </div>
             </div>
 
-            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
               <div class="cd">
                 <div class="cd-front">
                   <span>Web Technologies</span>
@@ -682,7 +686,7 @@
               </div>
 
             </div>
-            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-down" data-aos-delay="600">
               <div class="cd">
                 <div class="cd-front">
                   <span>Frameworks</span>
@@ -698,7 +702,7 @@
               </div>
 
             </div>
-            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="900">
               <div class="cd">
                 <div class="cd-front">
                   <span>Database</span>
@@ -737,22 +741,22 @@
 
                 <!-- Form Fields -->
                 <div class="form-group row mb-0">
-                  <div class="col-lg-6 form-group gsap-reveal">
+                  <div class="col-lg-6 form-group gsap-reveal" data-aos="zoom-in-left" data-aos-delay="0">
                     <label for="name">Name</label>
                     <input type="text" name="name" class="form-control" id="name" required>
                   </div>
-                  <div class="col-lg-6 form-group gsap-reveal">
+                  <div class="col-lg-6 form-group gsap-reveal" data-aos="zoom-in-right" data-aos-delay="300">
                     <label for="email">Email</label>
                     <input name="email" type="email" class="form-control" id="email" required>
                   </div>
-                  <div class="col-lg-12 form-group gsap-reveal">
+                  <div class="col-lg-12 form-group gsap-reveal" data-aos="zoom-in-left" data-aos-delay="600">
                     <label for="message">Write your message...</label>
                     <textarea name="message" id="message" cols="30" rows="7" class="form-control"></textarea>
                   </div>
                 </div>
 
                 <!-- Submit Button -->
-                <div class="form-group row gsap-reveal">
+                <div class="form-group row gsap-reveal" data-aos="zoom-in-left" data-aos-delay="900">
                   <div class="col-md-12 d-flex align-items-center">
                     <button type="submit" class="btn btn-outline-pill btn-custom-light mr-3">Send Message</button>
                   </div>
@@ -765,15 +769,15 @@
 
             <div class="col-md-4">
               <div class="contact-info-v1">
-                <div class="gsap-reveal d-block">
+                <div class="gsap-reveal d-block" data-aos="zoom-in-left" data-aos-delay="0">
                   <span class="d-block contact-info-label">Email</span>
                   <a href="#" class="contact-info-val">vsabinayashri@gmail.com</a>
                 </div>
-                <div class="gsap-reveal d-block">
+                <div class="gsap-reveal d-block" data-aos="zoom-in-right" data-aos-delay="300">
                   <span class="d-block contact-info-label">Phone</span>
                   <a href="#" class="contact-info-val">+91 9345468870</a>
                 </div>
-                <div class="gsap-reveal d-block">
+                <div class="gsap-reveal d-block" data-aos="zoom-in-left" data-aos-delay="600">
                   <span class="d-block contact-info-label">Linkedin</span>
                   <a href="https://www.linkedin.com/in/abinayashri-vs" class="contact-info-val">abinayashri-vs</a>
                 </div>
@@ -819,7 +823,87 @@
     <div class="site-loader"></div>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+      let homeSection = document.querySelector("#home-section");
+
+      let observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Run GSAP animation every time section enters view
+            gsap.fromTo(".heading", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1 });
+            gsap.fromTo(".subheading", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1, delay: 0.3 });
+          } else {
+            // Reset the elements when they go out of view (so animation can repeat)
+            gsap.set(".heading", { opacity: 0, y: 50 });
+            gsap.set(".subheading", { opacity: 0, y: 50 });
+          }
+        });
+      }, { threshold: 0.5 }); // Trigger when 50% of the section is visible
+
+      observer.observe(homeSection);
+    });
+
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+      let eduSection = document.querySelector("#edu-section");
+
+      let observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Run GSAP animation every time section enters view
+            gsap.fromTo(".edu-head", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1 });
+            gsap.fromTo(".edu-sub", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1, delay: 0.3 });
+          } else {
+            // Reset the elements when they go out of view (so animation can repeat)
+
+            gsap.set(".edu-head", { opacity: 0, y: 50 });
+            gsap.set(".edu-sub", { opacity: 0, y: 50 });
+          }
+        });
+      }, { threshold: 0.5 }); // Trigger when 50% of the section is visible
+
+      observer.observe(eduSection);
+    });
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+      let expSection = document.querySelector("#experience-section");
+
+      let observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Run GSAP animation every time section enters view
+            gsap.fromTo(".experience-head", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1 });
+            gsap.fromTo(".experience-sub", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1, delay: 0.2 });
+          } else {
+            // Reset the elements when they go out of view (so animation can repeat)
+            gsap.set(".experience-head", { opacity: 0, y: 50 });
+            gsap.set(".experience-sub", { opacity: 0, y: 50 });
+          }
+        });
+      }, { threshold: 0.5 }); // Trigger when 50% of the section is visible
+
+      observer.observe(expSection);
+    });
+
+    
+
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init({
+        duration: 1000,  
+        once: false,  
+        mirror:true,
+        offset:100
+      });
+    });
+
+
+
+
     // Handle form submission using vanilla JavaScript
     document
       .getElementById("contact")
@@ -870,6 +954,8 @@
           errorMessage.style.display = "block";
         }
       });
+
+      
   </script>
 
   <script src="js/scripts-dist.js"></script>
